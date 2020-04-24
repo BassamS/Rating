@@ -1,0 +1,37 @@
+body {
+	background-color: rgba(240, 234, 229, 0.676);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav > li{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+/* Logo */
+.logo img {
+  border-radius: 50%;
+}
+
+/* Rating */
+.checked {
+	color: orange;
+}
+
+.fa {
+	font-size:40px;
+	cursor:pointer;
+}
+
+.fa:hover {
+	color: orange;
+}
