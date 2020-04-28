@@ -22,7 +22,15 @@ window.addEventListener('mouseup', function (event) {
   let stars = this.document.getElementById('stars');
   if (event.target != stars && event.target.parentNode != stars) {
     for (i = 0; i < 5; i++) {
-      document.getElementById((i + 1) + subId).style.color = 'black';
+      document.getElementById((i) + subId).style.color = 'black';
     }
   }
 });
+
+function changeColor(stars) {
+  if (stars.style.color == 'orange') {
+    stars.style.color = 'black'
+  } else {
+    stars.style.color = 'orange';
+  }
+}
