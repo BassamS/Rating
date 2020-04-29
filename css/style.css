@@ -23,6 +23,11 @@ body {
 }
 
 /* Rating */
+
+.starClass {
+	color: black;
+}
+
 .checked {
 	color: orange;
 }
@@ -32,6 +37,6 @@ body {
 	cursor:pointer;
 }
 
-/* .fa:hover {
+.fa:hover {
 	color: orange;
-} */
+}

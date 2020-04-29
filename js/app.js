@@ -19,18 +19,10 @@ function starMark(item) {
 
 // Clicking away
 window.addEventListener('mouseup', function (event) {
-  let stars = this.document.getElementById('stars');
+  let stars = document.getElementById('stars').children;
   if (event.target != stars && event.target.parentNode != stars) {
-    for (i = 0; i < 5; i++) {
-      document.getElementById((i) + subId).style.color = 'black';
+    for (let i = 0; i < stars.length; i++) {
+      stars[i].style.color = 'black';
     }
   }
 });
-
-function changeColor(stars) {
-  if (stars.style.color == 'orange') {
-    stars.style.color = 'black'
-  } else {
-    stars.style.color = 'orange';
-  }
-}
