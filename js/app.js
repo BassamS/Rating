@@ -26,3 +26,15 @@ window.addEventListener('mouseup', function (event) {
     }
   }
 });
+
+// MouseEnter event NOT WORKING YET
+let fa = document.querySelector('.fa');
+fa.addEventListener('mouseenter', function () {
+  if (event.target == fa) {
+    for (let i = 0; i < fa.length; i++) {
+      fa[i].style.color = 'orange';
+      // event.target.style.color = 'orange';
+      console.log(event);
+    }
+  }
+});

@@ -38,5 +38,5 @@ body {
 }
 
 .fa:hover {
-	color: orange;
+	color: orange	!important;
 }
